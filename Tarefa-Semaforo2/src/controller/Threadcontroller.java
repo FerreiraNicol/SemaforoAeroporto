@@ -11,7 +11,8 @@ public class ThreadCarro extends Thread{
 		this.tid = tid;
 		this.semaforo = semaforo;
 	}
-	
+
+	@Override
 	public void run() {
 		try {
 			semaforo.acquire();
